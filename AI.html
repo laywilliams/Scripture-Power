@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Scripture</title>
+    <link href="css/scratch.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <a href="index.html">Resume</a>
+        <a href="scratch.html">scratch</a>
+    </nav>
+    <div class="common header2">
+        <h2>Your Scripture</h2> 
+    </div>
+    <div class="common bod">    
+        <h1>Random LDS Scripture</h1>
+        <button onclick="showRandomScripture()">Get Scripture</button>
+        <div id="scripture"></div>
+        <script>
+          const scriptures = [
+            "2 Nephi 2:25 - Adam fell that men might be; and men are, that they might have joy.",
+            "Mosiah 2:17 - When ye are in the service of your fellow beings ye are only in the service of your God.",
+            "Ether 12:27 - And if men come unto me I will show unto them their weakness.",
+            "Alma 37:6 - By small and simple things are great things brought to pass.",
+            "Doctrine and Covenants 1:37 - Search these commandments, for they are true and faithful.",
+            "Moroni 10:4 - Ask God, the Eternal Father, in the name of Christ, if these things are not true.",
+            "3 Nephi 11:29 - He that hath the spirit of contention is not of me, but is of the devil.",
+            "Helaman 5:12 - Remember, it is upon the rock of our Redeemer, who is Christ, the Son of God, that ye must build your foundation.",
+            "2 Nephi 31:20 - Wherefore, ye must press forward with a steadfastness in Christ."
+          ];
+          function showRandomScripture() {
+            const randomIndex = Math.floor(Math.random() * scriptures.length);
+            document.getElementById('scripture').textContent = scriptures[randomIndex];
+          }
+        </script>
+    </div>
+    <div  class="common bod">
+        <div class='tableauPlaceholder' id='viz1744950300355' style='position: relative'>
+            <noscript>
+                <a href='#'><img alt='Budget ControllingCockpit ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fo&#47;ForProject_17449501909440&#47;Home&#47;1_rss.png' style='border: none' /></a>
+            </noscript>
+            <object class='tableauViz'  style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                <param name='embed_code_version' value='3' /> 
+                <param name='site_root' value='' />
+                <param name='name' value='ForProject_17449501909440&#47;Home' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fo&#47;ForProject_17449501909440&#47;Home&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>
+        <script type='text/javascript'>                    
+            var divElement = document.getElementById('viz1744950300355');                    
+            var vizElement = divElement.getElementsByTagName('object')[0];                    
+            vizElement.style.width='90%';vizElement.style.height='895px';                    
+            var scriptElement = document.createElement('script');                    
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            vizElement.style.marginleft = auto;
+            vizElement.style.marginright = auto;
+        </script>
+    </div>
+    <div class="common footer">
+        <a class="a2" href="#top">Go To Top</a>
+    </div> 
+</body>
+</html>
